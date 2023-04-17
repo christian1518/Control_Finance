@@ -1,0 +1,36 @@
+.section__cards {
+    margin-top: 1.75rem;
+}
+
+.list__card {
+    margin-bottom: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.175rem solid var(--color-grey-5);
+    border-radius: var(--radius-2);
+}
+
+.type__item {
+    width: 4.25rem;
+    height: 1.625rem;
+    background-color: var(--color-grey-4);
+    text-align: center;
+    color: var(--color-grey-2);
+    border-radius: var(--radius-2);
+    font-weight: 600;
+}
+
+.type__item:hover {
+    color: var(--color-grey-1);
+    font-weight: 600;
+    transition: 1s;
+}
+
+.box__type-and-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 8rem;
+}
+

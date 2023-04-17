@@ -1,0 +1,66 @@
+@media (min-width: 48rem) {
+    body {
+        width: 100vw;
+    }
+    
+    .header__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 48rem) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 69%;
+        margin-left: 13rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .financial-summary__div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 48rem) {
+    .modal__controller {
+        margin: auto;
+        width: 26.75rem;
+        height: 18.2rem;
+    }
+
+    .box__category {
+        display: flex;
+        
+    }
+    
+    .category__container {
+        width: 10.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .category__enter, .category__exit {
+        padding: 0.5rem var(--font-size-3);
+    }
+
+    .box__submit {
+        display: flex;
+        justify-content: end;
+    }
+
+    .button__cancel {
+        margin-right: var(--font-size-2);
+    }
+}

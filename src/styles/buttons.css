@@ -1,0 +1,41 @@
+.register__button {
+    width: 21.438rem;
+    margin-top: 1.75rem;
+    background-color: var(--color-brand-1);
+    color: var(--color-mode);
+    font-weight: 600;
+    font-size: var(--font-size-3);
+}
+
+.register__button:hover {
+    background-color: var(--color-brand-2);
+    transition: 1s;
+}
+
+.buttons__filter {
+    padding: 0.469rem var(--font-size-3);
+    font-weight: 600;
+    font-size: var(--font-size-3);
+    border: 0.125rem solid var(--color-grey-5);
+    background-color: var(--color-mode);
+    width: 4.625rem;
+    text-align: center;
+}
+
+.buttons__filter:hover, .buttons__filter:focus {
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 0.125rem solid var(--color-brand-1);
+    transition: 1s;
+}
+
+.item__button-remove {
+    width: 1.75rem;
+    height: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-2);
+    background-color: var(--color-mode);
+    border: 0.175rem solid var(--color-grey-5);
+}

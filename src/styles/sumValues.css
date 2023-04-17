@@ -1,0 +1,16 @@
+.sum__values {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-grey-5);
+    border: 0.125rem solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+    height: 2.75rem;
+    align-items: center;
+    padding: 0.844rem var(--font-size-2);
+}
+
+.sum__values-title {
+    font-size: var(--font-size-3);
+    font-weight: 500;
+    height: var(--font-size-2);
+}

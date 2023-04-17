@@ -1,0 +1,9 @@
+.header__container {
+    padding: 1.75rem var(--font-size-2);
+    background-color: var(--color-grey-5);
+}
+
+.logo__change {
+    color: var(--color-brand-1);
+}
+
