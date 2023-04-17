@@ -1,4 +1,6 @@
-// import { insertedValues, valuesCategory } from "./valuesData.js";
+ import { insertedValues, valuesCategory } from "./valuesData.js";
+
+
 
 export const render = (array) => {
     const cardList = document.querySelector(".cards__list")
@@ -10,6 +12,7 @@ export const render = (array) => {
 
         cardList.appendChild(card)
     });
+    
 }
 
 export const createCard = (element) => {
@@ -22,6 +25,8 @@ export const createCard = (element) => {
 
     card.classList.add("list__card")
     card.dataset.elementId = element.id
+
+    button.id = element.id
 
     price.classList.add("item__price")
     div.classList.add("box__type-and-button")
@@ -44,6 +49,10 @@ export const createCard = (element) => {
     card.append(price, div)
 
     
+    button.addEventListener("click", () => {
+        buttonTash(insertedValues, element.id)
+    })
+
     return card
 }
 
@@ -66,3 +75,13 @@ export const totalValue = (array) => {
     }, 0)
     span.innerText = Number(valueTotal).toFixed(2)
 }
+
+const buttonTash = (array, elementId) => {
+    const filterButton = array.findIndex((value) => {
+        if(value.id === elementId) {
+            return value
+        }
+    })
+    array.splice(filterButton, 1)
+    render(array)
+} 

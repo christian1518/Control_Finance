@@ -3,7 +3,7 @@ import { insertedValues } from "./valuesData.js";
 import { categoryRender, render, totalValue } from "./render.js";
 import { handleRegisterValue } from "./modal.js";
 
-// Obs:handle permanece no arquivo index
+
 function handlefilter() {
     const all = document.getElementById("btn__all")
     const enter = document.getElementById("btn__enter")
@@ -65,10 +65,6 @@ const closeModal = () => {
         modalController.close()
     })
 }
-
-
-
-
 
 render(insertedValues)
 handlefilter(insertedValues)

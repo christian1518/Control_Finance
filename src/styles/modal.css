@@ -92,6 +92,11 @@ label {
     transition: 1s;
 }
 
+.category__enter:focus, .category__exit:focus {
+    color: var(--color-brand-1);
+    border: 0.175rem solid var(--color-brand-1);
+}
+
 .box__submit {
     display: flex;
     justify-content: space-between;

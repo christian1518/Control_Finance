@@ -11,6 +11,10 @@
     border-radius: var(--radius-2);
 }
 
+.list__card:focus {
+    border-color: var(--color-brand-1);
+}
+
 .type__item {
     width: 4.25rem;
     height: 1.625rem;
