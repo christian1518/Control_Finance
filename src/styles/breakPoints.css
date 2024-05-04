@@ -2,7 +2,7 @@
     body {
         width: 100vw;
     }
-    
+
     .header__container {
         width: 100%;
         display: flex;
@@ -10,7 +10,6 @@
         align-items: center;
     }
 }
-
 
 @media (min-width: 48rem) {
     main {

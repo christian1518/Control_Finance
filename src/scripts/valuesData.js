@@ -17,5 +17,3 @@ export let insertedValues = [
     categoryID: 0,
   },
 ];
-
-// insertedValues.forEach((element) => console.log(element))

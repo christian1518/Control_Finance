@@ -1,8 +1,6 @@
-/* Desenvolva sua lógica aqui */
 import { insertedValues } from "./valuesData.js";
-import { categoryRender, render, totalValue } from "./render.js";
+import { render, totalValue } from "./render.js";
 import { handleRegisterValue } from "./modal.js";
-
 
 function handlefilter() {
     const all = document.getElementById("btn__all")
@@ -16,7 +14,6 @@ function handlefilter() {
                 return value
             }  
         })
-
         cardList.innerHTML = ''
         render(insertedValues)
         totalValue(filteredElements)
@@ -44,7 +41,6 @@ function handlefilter() {
         totalValue(filteredElements)
     })
 }
-
 
 const handleModal = () => {
     const modalController = document.querySelector(".modal__controller")

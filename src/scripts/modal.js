@@ -1,6 +1,5 @@
 import { render, totalValue } from "./render.js"
 
-/* Desenvolva sua lógica aqui */
 export const handleRegisterValue = (array) => {
     const modal = document.querySelector(".modal__controller")
     const input = document.querySelector("input")

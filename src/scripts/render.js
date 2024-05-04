@@ -1,6 +1,4 @@
- import { insertedValues, valuesCategory } from "./valuesData.js";
-
-
+import { insertedValues, valuesCategory } from "./valuesData.js";
 
 export const render = (array) => {
     const cardList = document.querySelector(".cards__list")
@@ -12,7 +10,6 @@ export const render = (array) => {
 
         cardList.appendChild(card)
     });
-    
 }
 
 export const createCard = (element) => {
@@ -48,7 +45,6 @@ export const createCard = (element) => {
     div.append(span, button)
     card.append(price, div)
 
-    
     button.addEventListener("click", () => {
         buttonTash(insertedValues, element.id)
     })
@@ -61,7 +57,6 @@ export const categoryRender = (array) => {
         if(value.categoryID === 0) {
             return value
         } 
-
     })
     render(filteredElements)
 } 
@@ -70,7 +65,6 @@ export const totalValue = (array) => {
     const span = document.querySelector(".sum__values > .sum__values-text > span")
     
     const valueTotal = array.reduce((acumulator, actual) => {
-        
         return acumulator + actual.value
     }, 0)
     span.innerText = Number(valueTotal).toFixed(2)
